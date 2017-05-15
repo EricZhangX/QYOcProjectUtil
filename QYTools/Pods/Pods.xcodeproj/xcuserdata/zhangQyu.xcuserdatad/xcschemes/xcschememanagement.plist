@@ -19,10 +19,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YTKNetwork.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1DC58AED4D76D61A18938F021C10DF45</key>
+		<key>2ABE25404BC65B46E8AFCD8E79BB5DC5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DE9729BF4A929117C7A96D0B328725D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
