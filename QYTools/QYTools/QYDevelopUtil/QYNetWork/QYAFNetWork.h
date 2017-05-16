@@ -73,6 +73,15 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
           successCallBack:(SuccessBlock)sucessCallBack
           failureCallBack:(FailureBlock)failureCallBack;
 
+
+/**
+ 下载数据
+
+ @param url url下载路径
+ @param progressCallBack 数据下载进度
+ @param targetLocalPath 本地保存路径
+ @param complateCallBack 数据下载成功/失败回调
+ */
 + (void)downloadDataWithUrl:(NSString *)url
                    progress:(ProgressBlock)progressCallBack
                 destination:(NSString *)targetLocalPath

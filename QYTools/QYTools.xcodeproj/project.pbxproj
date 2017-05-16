@@ -11,6 +11,7 @@
 		992A5AA61EC95781006B6ABD /* UIPlaceHolderTextView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 992A5AA51EC95781006B6ABD /* UIPlaceHolderTextView.mm */; };
 		992A5AA91EC95A79006B6ABD /* AFNetworkingDefaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A5AA81EC95A79006B6ABD /* AFNetworkingDefaultVC.m */; };
 		992A5AB61EC998DF006B6ABD /* QYAFNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A5AB51EC998DF006B6ABD /* QYAFNetWork.m */; };
+		992A5AC51EC9B3E9006B6ABD /* QYNativeNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 992A5AC41EC9B3E9006B6ABD /* QYNativeNetWork.m */; };
 		9944E8291EC06B3C004971A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9944E8281EC06B3C004971A0 /* main.m */; };
 		9944E82C1EC06B3C004971A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9944E82B1EC06B3C004971A0 /* AppDelegate.m */; };
 		9944E8321EC06B3C004971A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9944E8301EC06B3C004971A0 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		992A5AA81EC95A79006B6ABD /* AFNetworkingDefaultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingDefaultVC.m; sourceTree = "<group>"; };
 		992A5AB41EC998DF006B6ABD /* QYAFNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYAFNetWork.h; sourceTree = "<group>"; };
 		992A5AB51EC998DF006B6ABD /* QYAFNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYAFNetWork.m; sourceTree = "<group>"; };
+		992A5AC31EC9B3E9006B6ABD /* QYNativeNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYNativeNetWork.h; sourceTree = "<group>"; };
+		992A5AC41EC9B3E9006B6ABD /* QYNativeNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYNativeNetWork.m; sourceTree = "<group>"; };
 		9944E8241EC06B3C004971A0 /* QYTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9944E8281EC06B3C004971A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9944E82A1EC06B3C004971A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 			children = (
 				992A5AB41EC998DF006B6ABD /* QYAFNetWork.h */,
 				992A5AB51EC998DF006B6ABD /* QYAFNetWork.m */,
+				992A5AC31EC9B3E9006B6ABD /* QYNativeNetWork.h */,
+				992A5AC41EC9B3E9006B6ABD /* QYNativeNetWork.m */,
 			);
 			path = QYNetWork;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 			files = (
 				9944E84B1EC079A0004971A0 /* QYDateUtil.m in Sources */,
 				9994FAF51EC5497D0042CFE6 /* UIViewController+CurrentVc.m in Sources */,
+				992A5AC51EC9B3E9006B6ABD /* QYNativeNetWork.m in Sources */,
 				992A5AA21EC95198006B6ABD /* MainTableVC.m in Sources */,
 				992A5AB61EC998DF006B6ABD /* QYAFNetWork.m in Sources */,
 				992A5AA61EC95781006B6ABD /* UIPlaceHolderTextView.mm in Sources */,
