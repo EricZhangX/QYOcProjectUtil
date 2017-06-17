@@ -17,12 +17,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    [self createData];
+//    
+//    [self findData];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
+
+//// 创建记录
+//- (void)createData {
+//    Person *person = [Person MR_createEntity];
+//    person.firstName = @"张";
+//    person.lastName = @"三";
+//    person.age = 25;
+//    [[NSManagedObjectContext MR_defaultContext]     MR_saveToPersistentStoreAndWait];
+//}
+//
+//// 查询记录
+//- (void)findData {
+//    // 查找数据库中的所有数据
+//    NSArray *person = [Person MR_findAll];
+//    // 查找所有的Person并按照firstName排序
+//    NSArray *personSorted = [Person MR_findAllSortedBy:@"firstName" ascending:YES];
+//    // 查找所有的age属性为25的Person记录
+//    NSArray *personAgeEqual25 = [Person MR_findByAttribute:@"age" withValue:[NSNumber numberWithInt:25]];
+//    // 查找数据库中的第一条记录
+//    Person *personFirst = [Person MR_findFirst];
+//    
+//    NSLog(@"%@  %@  %@  %@", person, personSorted, personAgeEqual25, personFirst);
+//    
+//    // 查找数据库中的第一条记录的全名
+//    personFirst = [Person MR_findFirst];
+//    NSLog(@"personName:%@%@", personFirst.firstName, personFirst.lastName);
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

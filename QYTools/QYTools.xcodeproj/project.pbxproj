@@ -17,8 +17,11 @@
 		9944E8321EC06B3C004971A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9944E8301EC06B3C004971A0 /* Main.storyboard */; };
 		9944E8341EC06B3C004971A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9944E8331EC06B3C004971A0 /* Assets.xcassets */; };
 		9944E8371EC06B3C004971A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9944E8351EC06B3C004971A0 /* LaunchScreen.storyboard */; };
-		9944E84B1EC079A0004971A0 /* QYDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9944E84A1EC079A0004971A0 /* QYDateUtil.m */; };
+		9947802E1EE7DD90003D935A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9947802D1EE7DD90003D935A /* CoreData.framework */; };
 		9994FAF51EC5497D0042CFE6 /* UIViewController+CurrentVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9994FAF41EC5497D0042CFE6 /* UIViewController+CurrentVc.m */; };
+		99F86B4A1EE7E9DD0065AADE /* Person.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 99F86B481EE7E9DD0065AADE /* Person.xcdatamodeld */; };
+		99FC7CF61EF4C2180061359E /* QYDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FC7CF51EF4C2180061359E /* QYDateUtil.m */; };
+		99FC7CFA1EF4C2F30061359E /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FC7CF91EF4C2F30061359E /* Foundation+Log.m */; };
 		C1AF5501CD83A7BF01E26C96 /* libPods-QYTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65784CFE204417EE4008C232 /* libPods-QYTools.a */; };
 /* End PBXBuildFile section */
 
@@ -44,11 +47,16 @@
 		9944E8331EC06B3C004971A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9944E8361EC06B3C004971A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9944E8381EC06B3C004971A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9944E8491EC079A0004971A0 /* QYDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYDateUtil.h; sourceTree = "<group>"; };
-		9944E84A1EC079A0004971A0 /* QYDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYDateUtil.m; sourceTree = "<group>"; };
-		9944E84C1EC07B2A004971A0 /* QYDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYDefines.h; sourceTree = "<group>"; };
+		9947802C1EE7DC58003D935A /* QYTools.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYTools.pch; sourceTree = "<group>"; };
+		9947802D1EE7DD90003D935A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9994FAF31EC5497D0042CFE6 /* UIViewController+CurrentVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CurrentVc.h"; sourceTree = "<group>"; };
 		9994FAF41EC5497D0042CFE6 /* UIViewController+CurrentVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CurrentVc.m"; sourceTree = "<group>"; };
+		99F86B491EE7E9DD0065AADE /* Person.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Person.xcdatamodel; sourceTree = "<group>"; };
+		99F86B4B1EE7EA280065AADE /* Person 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Person 2.xcdatamodel"; sourceTree = "<group>"; };
+		99FC7CF41EF4C2180061359E /* QYDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYDateUtil.h; sourceTree = "<group>"; };
+		99FC7CF51EF4C2180061359E /* QYDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYDateUtil.m; sourceTree = "<group>"; };
+		99FC7CF81EF4C2540061359E /* QYMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QYMacro.h; sourceTree = "<group>"; };
+		99FC7CF91EF4C2F30061359E /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9947802E1EE7DD90003D935A /* CoreData.framework in Frameworks */,
 				C1AF5501CD83A7BF01E26C96 /* libPods-QYTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +122,7 @@
 		9944E8261EC06B3C004971A0 /* QYTools */ = {
 			isa = PBXGroup;
 			children = (
+				9947802F1EE7DDCA003D935A /* MagicalRecord */,
 				9944E83E1EC06BBF004971A0 /* QYDevelopUtil */,
 				9944E82A1EC06B3C004971A0 /* AppDelegate.h */,
 				9944E82B1EC06B3C004971A0 /* AppDelegate.m */,
@@ -123,6 +133,7 @@
 				9944E8331EC06B3C004971A0 /* Assets.xcassets */,
 				9944E8351EC06B3C004971A0 /* LaunchScreen.storyboard */,
 				9944E8381EC06B3C004971A0 /* Info.plist */,
+				9947802C1EE7DC58003D935A /* QYTools.pch */,
 				9944E8271EC06B3C004971A0 /* Supporting Files */,
 			);
 			path = QYTools;
@@ -143,9 +154,10 @@
 				992A5AA31EC9574D006B6ABD /* CustomComponent */,
 				9944E8471EC0798F004971A0 /* QYCategory */,
 				9944E8481EC0798F004971A0 /* QYEncryptUtil */,
-				9944E8491EC079A0004971A0 /* QYDateUtil.h */,
-				9944E84A1EC079A0004971A0 /* QYDateUtil.m */,
-				9944E84C1EC07B2A004971A0 /* QYDefines.h */,
+				99FC7CF81EF4C2540061359E /* QYMacro.h */,
+				99FC7CF91EF4C2F30061359E /* Foundation+Log.m */,
+				99FC7CF41EF4C2180061359E /* QYDateUtil.h */,
+				99FC7CF51EF4C2180061359E /* QYDateUtil.m */,
 			);
 			path = QYDevelopUtil;
 			sourceTree = "<group>";
@@ -166,6 +178,14 @@
 			path = QYEncryptUtil;
 			sourceTree = "<group>";
 		};
+		9947802F1EE7DDCA003D935A /* MagicalRecord */ = {
+			isa = PBXGroup;
+			children = (
+				99F86B481EE7E9DD0065AADE /* Person.xcdatamodeld */,
+			);
+			path = MagicalRecord;
+			sourceTree = "<group>";
+		};
 		B5283E840D006631AB806B4E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +198,7 @@
 		DC76A5199A0FE6EF79E89417 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9947802D1EE7DD90003D935A /* CoreData.framework */,
 				65784CFE204417EE4008C232 /* libPods-QYTools.a */,
 			);
 			name = Frameworks;
@@ -218,6 +239,7 @@
 					9944E8231EC06B3C004971A0 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 7PKFLABZWB;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -306,11 +328,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9944E84B1EC079A0004971A0 /* QYDateUtil.m in Sources */,
 				9994FAF51EC5497D0042CFE6 /* UIViewController+CurrentVc.m in Sources */,
 				992A5AC51EC9B3E9006B6ABD /* QYNativeNetWork.m in Sources */,
 				992A5AA21EC95198006B6ABD /* MainTableVC.m in Sources */,
+				99F86B4A1EE7E9DD0065AADE /* Person.xcdatamodeld in Sources */,
 				992A5AB61EC998DF006B6ABD /* QYAFNetWork.m in Sources */,
+				99FC7CFA1EF4C2F30061359E /* Foundation+Log.m in Sources */,
+				99FC7CF61EF4C2180061359E /* QYDateUtil.m in Sources */,
 				992A5AA61EC95781006B6ABD /* UIPlaceHolderTextView.mm in Sources */,
 				9944E82C1EC06B3C004971A0 /* AppDelegate.m in Sources */,
 				992A5AA91EC95A79006B6ABD /* AFNetworkingDefaultVC.m in Sources */,
@@ -371,6 +395,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -417,6 +442,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -435,11 +461,16 @@
 			baseConfigurationReference = 3FEA69CC05BF93135B5DAF57 /* Pods-QYTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7PKFLABZWB;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QYTools/QYTools.pch";
 				INFOPLIST_FILE = QYTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busibuyu-163.QYTools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -448,11 +479,15 @@
 			baseConfigurationReference = 5228D9F6776A0A269783B8BC /* Pods-QYTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 7PKFLABZWB;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QYTools/QYTools.pch";
 				INFOPLIST_FILE = QYTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.busibuyu-163.QYTools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -478,6 +513,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		99F86B481EE7E9DD0065AADE /* Person.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				99F86B4B1EE7EA280065AADE /* Person 2.xcdatamodel */,
+				99F86B491EE7E9DD0065AADE /* Person.xcdatamodel */,
+			);
+			currentVersion = 99F86B491EE7E9DD0065AADE /* Person.xcdatamodel */;
+			path = Person.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9944E81C1EC06B3C004971A0 /* Project object */;
 }

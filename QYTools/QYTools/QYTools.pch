@@ -1,0 +1,17 @@
+//
+//  QYTools.pch
+//  QYTools
+//
+//  Created by 张庆玉 on 07/06/2017.
+//  Copyright © 2017 张庆玉. All rights reserved.
+//
+
+#ifndef QYTools_pch
+#define QYTools_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <MagicalRecord/MagicalRecord.h>
+
+#endif /* QYTools_pch */

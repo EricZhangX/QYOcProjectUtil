@@ -57,6 +57,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="EIX-i8-bI8" kind="show" id="5YB-hI-Grl"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="NGr-kT-2o2" style="IBUITableViewCellStyleDefault" id="91T-kC-a2K">
                                         <rect key="frame" x="0.0" y="143.5" width="375" height="44"/>
@@ -134,6 +137,38 @@
             </objects>
             <point key="canvasLocation" x="401" y="117"/>
         </scene>
+        <!--AFNetWorking 简易封装-->
+        <scene sceneID="SQr-qE-e2y">
+            <objects>
+                <viewController title="AFNetWorking 简易封装" id="EIX-i8-bI8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JVu-Ut-j8P"/>
+                        <viewControllerLayoutGuide type="bottom" id="HfM-cE-JIG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TX9-vw-8on">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jgY-6W-Uyj">
+                                <rect key="frame" x="16" y="423" width="343" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jgY-6W-Uyj" firstAttribute="leading" secondItem="TX9-vw-8on" secondAttribute="leadingMargin" id="fol-pr-yRh"/>
+                            <constraint firstItem="HfM-cE-JIG" firstAttribute="top" secondItem="jgY-6W-Uyj" secondAttribute="bottom" constant="216" id="oRq-bz-kc0"/>
+                            <constraint firstItem="jgY-6W-Uyj" firstAttribute="trailing" secondItem="TX9-vw-8on" secondAttribute="trailingMargin" id="sap-Qs-yjZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Xc-aW-fAZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="-244.22788605697153"/>
+        </scene>
         <!--AFNetWorking原生-->
         <scene sceneID="gYf-nq-oVW">
             <objects>
@@ -152,6 +187,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="fKv-cd-Nt0"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVq-1C-IVa">
@@ -238,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gx8-Jv-zRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="114.69265367316342"/>
+            <point key="canvasLocation" x="1359" y="-985"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AKf-40-J4M">

@@ -85,6 +85,38 @@
     return dateComponents.month;
 }
 
+// 获取某天是本月的第几周
++ (NSInteger)getWeekOfMonthWithDate:(NSDate *)date {
+    NSCalendar *greCalendar = [NSCalendar currentCalendar];
+    NSDateComponents *dateComponents = [greCalendar components:NSCalendarUnitWeekOfMonth fromDate:date];
+    return dateComponents.weekOfMonth;
+}
+
+// 获取某天是几号
++ (NSInteger)getDayWithDate:(NSDate *)date {
+    NSCalendar *greCalendar = [NSCalendar currentCalendar];
+    NSDateComponents *dateComponents = [greCalendar components:NSCalendarUnitDay fromDate:date];
+    return dateComponents.day;
+}
+
+// 获取某个时刻是几点
++ (NSInteger)getHourWithDate:(NSDate *)date {
+    NSString *dateStr = [self getDateStrWithDate:date format:@"HH"];
+    return [dateStr integerValue];
+}
+
+// 获取某个时刻是几分
++ (NSInteger)getMinuteWithDate:(NSDate *)date {
+    NSString *dateStr = [self getDateStrWithDate:date format:@"mm"];
+    return [dateStr integerValue];
+}
+
+// 获取某个时刻是几秒
++ (NSInteger)getSecondWithDate:(NSDate *)date {
+    NSString *dateStr = [self getDateStrWithDate:date format:@"ss"];
+    return [dateStr integerValue];
+}
+
 // 获取某天是周几
 + (NSInteger)getWeekDayWithDate:(NSDate *)date {
     NSCalendar *greCalendar = [NSCalendar currentCalendar];
@@ -118,5 +150,27 @@
     return daysArr;
 }
 
++ (NSDate *)getLastDayOfMonthWithDate:(NSDate *)date {
+
+    double interval = 0;
+    NSDate *beginDate = nil;
+    NSDate *endDate = nil;
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    
+    BOOL ok = [calendar rangeOfUnit:NSCalendarUnitMonth startDate:&beginDate interval:&interval forDate:date];
+    if (ok) {
+        endDate = [beginDate dateByAddingTimeInterval:interval-1];
+        return endDate;
+    }else {
+        return nil;
+    }
+}
+
 
 @end
+
+
+
+
+
+

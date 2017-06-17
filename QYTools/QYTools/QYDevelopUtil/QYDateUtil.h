@@ -90,6 +90,51 @@
 + (NSInteger)getMonthWithDate:(NSDate *)date;
 
 /**
+ *  获取某天是本月的第几周
+ *
+ *  @param date date description
+ *
+ *  @return return value description
+ */
++ (NSInteger)getWeekOfMonthWithDate:(NSDate *)date;
+
+/**
+ *  获取某天是几号
+ *
+ *  @param date date description
+ *
+ *  @return return value description
+ */
++ (NSInteger)getDayWithDate:(NSDate *)date;
+
+/**
+ *  获取某个时刻是几点
+ *
+ *  @param date date description
+ *
+ *  @return return value description
+ */
++ (NSInteger)getHourWithDate:(NSDate *)date;
+
+/**
+ *  获取某个时刻是几分
+ *
+ *  @param date date description
+ *
+ *  @return return value description
+ */
++ (NSInteger)getMinuteWithDate:(NSDate *)date;
+
+/**
+ *  获取某个时刻是几秒
+ *
+ *  @param date date description
+ *
+ *  @return return value description
+ */
++ (NSInteger)getSecondWithDate:(NSDate *)date;
+
+/**
  *  获取某天的星期
  *
  *  @param date date description
@@ -114,6 +159,8 @@
  @return 某日所在的星期的日期数组
  */
 + (NSArray<NSDate *> *)getWeekDaysOfTheDate:(NSDate *)date;
+
++ (NSDate *)getLastDayOfMonthWithDate:(NSDate *)date;
 
 
 

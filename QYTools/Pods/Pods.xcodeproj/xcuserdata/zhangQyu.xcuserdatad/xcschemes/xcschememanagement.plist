@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-QYTools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,12 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2ABE25404BC65B46E8AFCD8E79BB5DC5</key>
+		<key>417EA9844EC286C5B1B8FCB029C00130</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DE9729BF4A929117C7A96D0B328725D</key>
+		<key>484CE5583F94F3DF84AE7B3BABF49C44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E980DED5A79961CF26C285A429908BA4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
