@@ -37,6 +37,9 @@
 		7DA581BF2134E49B004E0BB5 /* NetWorkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkUtil.h; sourceTree = "<group>"; };
 		7DA581C02134E546004E0BB5 /* ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
 		7DA581C12134E546004E0BB5 /* ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
+		7DA581C62134E7E5004E0BB5 /* CommonLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonLib.h; sourceTree = "<group>"; };
+		7DA581C72134E7F4004E0BB5 /* CommonLibConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonLibConfig.h; sourceTree = "<group>"; };
+		7DA581C82134E803004E0BB5 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		84752AA01FB03F48004FFC91 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		84752AA11FB03F48004FFC91 /* UIImage+ColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
 		84752AA21FB03F49004FFC91 /* MBProgressHUD+QY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+QY.m"; sourceTree = "<group>"; };
@@ -88,6 +91,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DA581C32134E772004E0BB5 /* CommonLib */ = {
+			isa = PBXGroup;
+			children = (
+				7DA581C62134E7E5004E0BB5 /* CommonLib.h */,
+				7DA581C72134E7F4004E0BB5 /* CommonLibConfig.h */,
+				7DA581C82134E803004E0BB5 /* Global.h */,
+				992A5AB31EC998B1006B6ABD /* QYNetWork */,
+			);
+			path = CommonLib;
+			sourceTree = "<group>";
+		};
 		992A5AA31EC9574D006B6ABD /* CustomComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +155,7 @@
 		9944E8261EC06B3C004971A0 /* QYTools */ = {
 			isa = PBXGroup;
 			children = (
+				7DA581C32134E772004E0BB5 /* CommonLib */,
 				9947802F1EE7DDCA003D935A /* MagicalRecord */,
 				9944E83E1EC06BBF004971A0 /* QYDevelopUtil */,
 				9944E82A1EC06B3C004971A0 /* AppDelegate.h */,
@@ -169,7 +184,6 @@
 		9944E83E1EC06BBF004971A0 /* QYDevelopUtil */ = {
 			isa = PBXGroup;
 			children = (
-				992A5AB31EC998B1006B6ABD /* QYNetWork */,
 				992A5AA31EC9574D006B6ABD /* CustomComponent */,
 				9944E8471EC0798F004971A0 /* QYCategory */,
 				99FC7CF81EF4C2540061359E /* QYMacro.h */,
