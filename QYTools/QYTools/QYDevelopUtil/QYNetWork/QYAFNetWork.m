@@ -23,7 +23,9 @@
     AFHTTPSessionManager *manager = [self getHTTPSessionManagerWithHeaer:header httpsCerData:nil cerPwd:nil];
     [manager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
-        progressCallBack(downloadProgress);
+        if (progressCallBack) {
+            progressCallBack(downloadProgress);
+        }
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 成功处理
@@ -51,7 +53,9 @@
     AFHTTPSessionManager *manager = [self getHTTPSessionManagerWithHeaer:header httpsCerData:nil cerPwd:nil];
     [manager POST:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
-        progressCallBack(downloadProgress);
+        if (progressCallBack) {
+            progressCallBack(downloadProgress);
+        }
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         // 成功处理
@@ -82,7 +86,9 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
         formDataBlock(formData);
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         
-        progressCallBack(uploadProgress);
+        if (progressCallBack) {
+            progressCallBack(uploadProgress);
+        }
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -108,7 +114,9 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
     
     NSURLSessionDownloadTask *task = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
         
-        progressCallBack(downloadProgress);
+        if (progressCallBack) {
+            progressCallBack(downloadProgress);
+        }
         
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
         
@@ -117,11 +125,11 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
         } else {
             return targetPath;
         }
-
+        
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         complateCallBack(response,filePath,error);
     }];
-
+    
     [task resume];
 }
 
@@ -172,7 +180,6 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
     return securityPolicy;
 }
 
-
 #pragma mark - 打印调试信息
 + (void)printRequestDataWithUrl:(NSString *)url params:(NSDictionary *)params {
     
@@ -190,13 +197,13 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
 
 + (void)printResponseDataWithUrl:(NSString *)url params:(NSDictionary *)params responseData:(id)responseData {
     
-    NSString *jsonStr = @"";
-    if (responseData) {
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseData
-                                                           options:NSJSONWritingPrettyPrinted
-                                                             error:nil];
-        jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
-    }
+    //    NSString *jsonStr = @"";
+    //    if (responseData) {
+    //        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseData
+    //                                                           options:NSJSONWritingPrettyPrinted
+    //                                                             error:nil];
+    //        jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    //    }
     NSLog(@"\n/************ 回复报文 ************/ \n"
           "response: %@\n"
           "{ \n  "
@@ -204,7 +211,7 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
           "params:%@, \n  "
           "} \n"
           "********************************* \n",
-          jsonStr,
+          responseData,
           url,
           [params description]);
     

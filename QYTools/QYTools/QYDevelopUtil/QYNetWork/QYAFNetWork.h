@@ -21,7 +21,7 @@ typedef void (^DownloadBlock) (NSURLResponse *response, NSURL *filePath, NSError
 
 /**
  Get请求基础方法
-
+ 
  @param url url路径
  @param params 参数
  @param header 请求头
@@ -56,7 +56,7 @@ typedef void (^DownloadBlock) (NSURLResponse *response, NSURL *filePath, NSError
 
 /**
  上传数据
-
+ 
  @param url url路径
  @param params 参数
  @param header 请求头
@@ -76,7 +76,7 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
 
 /**
  下载数据
-
+ 
  @param url url下载路径
  @param progressCallBack 数据下载进度
  @param targetLocalPath 本地保存路径
@@ -86,7 +86,6 @@ constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))formDataB
                    progress:(ProgressBlock)progressCallBack
                 destination:(NSString *)targetLocalPath
           completionHandler:(DownloadBlock)complateCallBack;
-
 @end
 
 

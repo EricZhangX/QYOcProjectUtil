@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DA581C22134E546004E0BB5 /* ResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA581C02134E546004E0BB5 /* ResponseModel.m */; };
 		84752AAA1FB03F4A004FFC91 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 84752AA01FB03F48004FFC91 /* UIColor+Util.m */; };
 		84752AAB1FB03F4A004FFC91 /* UIImage+ColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 84752AA11FB03F48004FFC91 /* UIImage+ColorImage.m */; };
 		84752AAC1FB03F4A004FFC91 /* MBProgressHUD+QY.m in Sources */ = {isa = PBXBuildFile; fileRef = 84752AA21FB03F49004FFC91 /* MBProgressHUD+QY.m */; };
@@ -33,6 +34,9 @@
 		3FEA69CC05BF93135B5DAF57 /* Pods-QYTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QYTools/Pods-QYTools.debug.xcconfig"; sourceTree = "<group>"; };
 		5228D9F6776A0A269783B8BC /* Pods-QYTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QYTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-QYTools/Pods-QYTools.release.xcconfig"; sourceTree = "<group>"; };
 		65784CFE204417EE4008C232 /* libPods-QYTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QYTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DA581BF2134E49B004E0BB5 /* NetWorkUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetWorkUtil.h; sourceTree = "<group>"; };
+		7DA581C02134E546004E0BB5 /* ResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseModel.m; sourceTree = "<group>"; };
+		7DA581C12134E546004E0BB5 /* ResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseModel.h; sourceTree = "<group>"; };
 		84752AA01FB03F48004FFC91 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		84752AA11FB03F48004FFC91 /* UIImage+ColorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ColorImage.m"; sourceTree = "<group>"; };
 		84752AA21FB03F49004FFC91 /* MBProgressHUD+QY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+QY.m"; sourceTree = "<group>"; };
@@ -105,10 +109,13 @@
 		992A5AB31EC998B1006B6ABD /* QYNetWork */ = {
 			isa = PBXGroup;
 			children = (
+				7DA581BF2134E49B004E0BB5 /* NetWorkUtil.h */,
 				992A5AB41EC998DF006B6ABD /* QYAFNetWork.h */,
 				992A5AB51EC998DF006B6ABD /* QYAFNetWork.m */,
 				992A5AC31EC9B3E9006B6ABD /* QYNativeNetWork.h */,
 				992A5AC41EC9B3E9006B6ABD /* QYNativeNetWork.m */,
+				7DA581C12134E546004E0BB5 /* ResponseModel.h */,
+				7DA581C02134E546004E0BB5 /* ResponseModel.m */,
 			);
 			path = QYNetWork;
 			sourceTree = "<group>";
@@ -353,6 +360,7 @@
 				99FC7CFA1EF4C2F30061359E /* Foundation+Log.m in Sources */,
 				99FC7CF61EF4C2180061359E /* QYDateUtil.m in Sources */,
 				84752AAA1FB03F4A004FFC91 /* UIColor+Util.m in Sources */,
+				7DA581C22134E546004E0BB5 /* ResponseModel.m in Sources */,
 				992A5AA61EC95781006B6ABD /* UIPlaceHolderTextView.mm in Sources */,
 				9944E82C1EC06B3C004971A0 /* AppDelegate.m in Sources */,
 				84752AAC1FB03F4A004FFC91 /* MBProgressHUD+QY.m in Sources */,
